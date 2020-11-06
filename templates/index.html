@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='miestilo.css') }}">
+</head>
+
+<body>
+    <div class='contenedorp'>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Miguel Tejedor</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="mobile.html">Mobile</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--
+        
+        <div class="divmenu">
+            
+            <ul id='button'>
+                <li><a href='#estudios'>Estudios</a></li>
+                <li><a href='#personal'>Información personal</a></li>
+                <li><a href='#estudios'>Estudios</a></li>
+                <li><a href='#experiencia'>Experiencia</a></li>
+                <li><a href='#contacto'>Contacto</a></li>
+            </ul>
+        </div>
+       
+-->
+
+        <div class='envoltura'>
+
+            <div class="col s12 m7">
+                <h5 class="header">Perfil</h5>
+                <div class="card horizontal">
+                  <div class="card-image">
+                    <img src="{{url_for('static', filename='foto.jpg') }}">
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <p>Ingeniero de Sistemas, creativo, hábil y de gran capacidad para aprender, con
+                        criterio para asumir
+                        el conocimiento y la técnica. Poseo gran capacidad de adaptabilidad, trabajo bajo presión y en
+                        equipo. Mi objetivo en la vida es aportar a la sociedad herramientas útiles que permitan desarrollo
+                        integral de todo ser humano.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="https://www.linkedin.com/in/miguel-angel-tejedor-mendoza-6695b91a6/">Perfil en linkedin</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col s12 m7">
+                <h5 class="header">Información personal</h5>
+                <div class="card horizontal">
+                  <div class="card-stacked">
+                    <div class="card-content">
+                        <p>
+                            Nombre(s) / Apellido(s) Miguel Ángel/ Tejedor Mendoza <br>
+                            Dirección Bucaramanga, Carrera 30, Calle 9, Universidad Industrial de Santander, Residencias
+                            Universitárias UIS. <br>
+                            Móvil 3115667637 <br>
+                            Correo(s) electrónico(s) <u> miguel.tejedor@correo.uis.edu.co </u><br>
+                            Nacionalidad Colombiana <br>
+                            Ciudad de nacimiento Cimitarra, Santander <br>
+                            Documento de identidad Cédula de ciudadanía No. 1.098.170.736 de El Peñón Santander <br>
+                            Sexo Masculino <br>
+        
+                        </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m7">
+                <h5 class="header">Estudios</h5>
+                <div class="card horizontal">
+                  <div class="card-stacked">
+                    <div class="card-content">
+                        <p>
+                            Secundaria: Colegio Integrado Antonio Ricaurte <br>
+                            Universidad: UIS
+                        </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m7">
+                <h5 class="header">Formación Complementaria</h5>
+                <div class="card horizontal">
+                  <div class="card-stacked">
+                    <div class="card-content">
+                        <p>
+                            ORIENTACION DE LA FORMACION PROFESIONAL <br>
+                            BIENVENIDA A INSTRUCTORES SENA<br>
+                            APLICACION DE HERRAMIENTAS METODOLOGICAS EN INVESTIGACION: PROCESOS DE CIENCIA, TECNOLOGÍA E
+                            INNOVACION <br>
+                            INTEGRACION DE HERRAMIENTAS TECNOLOGICAS EN LA ENSEÑANZA Y APRENDIZAJE
+                        </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m7">
+                <h5 class="header">Experiencia laboral</h5>
+                <div class="card horizontal">
+                  <div class="card-stacked">
+                    <div class="card-content">
+                        <p>
+                            <table id="experiencia">
+                                <tr>
+                                    <th>Cargos</td>
+                                    <th>Entidad</td>
+                                    <th>Fecha Inicio</td>
+                                    <th>Fecha Fin</td>
+                                </tr>
+            
+                                <tr>
+                                    <td>Instructor</td>
+                                    <td>SENA</td>
+                                    <td>19/05/2017</td>
+                                    <td>15/12/2017</td>
+                                </tr>
+            
+                                <tr>
+                                    <td>Instructor</td>
+                                    <td>SENA</td>
+                                    <td>03/02/2017</td>
+                                    <td>18/05/2017</td>
+                                </tr>
+            
+                                <tr>
+                                    <td>Instructor</td>
+                                    <td>SENA</td>
+                                    <td>10/02/2016</td>
+                                    <td>02/12/2016</td>
+                                </tr>
+            
+                                <tr>
+                                    <td>Instructor</td>
+                                    <td>SENA</td>
+                                    <td>20/11/2015</td>
+                                    <td>20/12/2015</td>
+                                </tr>
+            
+            
+                            </table>
+                        </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class='center'>
+
+                <img style='position: relative;'' id='imagen' src="{{ url_for('static', filename='foto.jpg') }}"
+                    alt="" class='center'> <br>
+
+                <a class='center' style='text-align: center;'
+                    href="https://www.linkedin.com/in/miguel-angel-tejedor-mendoza-6695b91a6/">Perfil en
+                    linkedin</a> <br> <br>
+                </div>
+            
+        </div>
+
+        <div class='pie' id="contacto">
+            <footer class="page-footer">
+                <div class="container">
+                  <div class="row">
+                    <div class="col l6 s12">
+                      <h5 class="white-text">Desarollador Web</h5>
+                      <p class="grey-text text-lighten-4">Calle 6 #7-02 America India <span>Vélez</span> 
+                        <span>Celular: 3115667637</span></p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                      <h5 class="white-text">Links</h5>
+                      <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-copyright">
+                  <div class="container">
+                  © 2014 Copyright Text
+                  <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                  </div>
+                </div>
+              </footer>
+            <p id='direccion' style='text-align: center;'>Calle 6 #7-02 America India<span>Vélez</span> Celular:
+                <span>3115667637</span></p>
+        </div>
+    </div>
+
+    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".button-collapse").sideNav();
+        });
+    </script>
+    
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+</html>
